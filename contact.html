@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo3.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Course.html">Psihoterapie Individuala</a></li>
+                    <li><a href="about.html">Despre Mine</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Programeza Te</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Contact Us</h1>
+
+    </section>
+    
+<!---- Contact us------>
+
+<section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2789.600437246759!2d25.634799951299254!3d45.63876252969658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35c5f7d66aaab%3A0xc86f21e1dff33ba0!2ssaturn%2036!5e0!3m2!1sen!2sro!4v1641988596951!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-handshake-o"></i>
+                <span>
+                <h5>Cristina Archip</h5>
+                <p>Cabinet Individual de Psihoterapie</p>
+                </span>
+              </div>
+         <div>
+              <i class="fa fa-home"></i>
+                <span>
+                <h5> Bld Saturn Nr. 36</h5>
+                <p>  Brasov, Romania</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                <h5>0040 - 726300000</h5>
+                <p>Monday to Saturday, 10am to 6pm</p>
+                </span>
+              </div>
+              <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                <h5>myemail@gmail.com</h5>
+                <p>email us your query</p>
+                </span>
+              </div>
+        </div>
+        <div class="contact-col">
+
+                <form action="send.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>  
+                    <input type="email" name="email" placeholder="Enter  email address" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                     <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                     <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+
+
+
+        </div>
+    </div>
+
+
+</section>
+
+<!---- Footer------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>La Cabinetul de Psihologie <span>Cristina Archip</span> veti gasi o atmosfera primitoare, securizanta si linistita, unde va voi ajuta sa gasiti raspuns la propriile voastre intrebari<br>unde vom pasi impreuna pe calea spre vindecarea ranilor si suferintelor voastre<br>unde va voi insoti in explorarea propriei voastre vieti.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> AC</p>
+</section>
+
+<!-----JAVA SCRIPT------>
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-270px";
+    }
+
+</script>
+
+</body>
+</html>
